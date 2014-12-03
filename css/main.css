@@ -1,0 +1,71 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+html,body{
+	-d-fill: container;
+	font-family: arial, sans-serif;
+	background-color: #060017;
+	color: #fff;
+	font-size: 16px;
+	line-height: 23px;
+}
+
+#header {
+	position: static;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #3e007c;
+	box-shadow: 0px 3px 5px #000;
+}
+
+#header .text{
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+#container{width: 70%; margin: 0 auto;}
+
+.textbox{
+	width: 100%;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #110040;
+	border: 3px solid #0b0029;
+	text-align: center;
+}
+
+.column {
+	width: 25%;
+	background-color: #110040;
+	border: 3px solid #0b0029;
+	text-align: center;
+	min-height: match-max('.column','height');
+	padding: 10px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.hcenter {
+	-d-center: horizontal;
+}
+
+.vcenter {
+	-d-center: vertical;
+}
+
+.center {
+	-d-center: both;
+}
+
+.random {
+	background-color: js("'#'+Math.floor(Math.random()*16777215).toString(16)");
+}

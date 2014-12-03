@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic CSS Demo</title>
+	
+	<!-- We Need jQuery for The Magic -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+	<!-- The Magic -->
+	<script src="./js/dcss.js"></script>
+
+	<!-- The Style -->
+	<link rel="stylesheet" href="./css/main.css">	
+
+</head>
+<body>
+
+	<div id="header">
+		<span class="text">Dynamic CSS Demo</span>
+	</div>
+	
+	<div id="container">
+		<div class="textbox">
+			Dynamic CSS is <b>Augmented CSS</b>. It's designed to be clean and <i>just work</i>.<br>
+			In traditional CSS, even this rudimentary layout is incredibly frustrating to build.
+		</div>
+		
+		<div class="column left">This<br>is<br>a<br>tall<br>column.<br><br>All columns are always the height of the tallest column.</div>
+		<div class="column hcenter random">This column has some text and needs to be horizontally centered. It also has a random background color.</div>
+		<div class="column right"><span class="center random" style="width: 200px;max-width:100%;">This text is in an element that is vertically and horizontally centered.</span></div>
+		
+	</div>
+
+</body>
+</html>
